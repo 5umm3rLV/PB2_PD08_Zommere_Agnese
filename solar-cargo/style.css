@@ -70,27 +70,20 @@ th {
 }
 
 /* Tabulas un formas izkārtojums */
-.layout {
+.izkartojums {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-.table-container,
-.form-container {
+.tabula,
+.forma {
     flex: 1;
     min-width: 300px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
     padding: 20px;
     border-radius: 8px;
-}
-
-/* Forma */
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .form-container input,
