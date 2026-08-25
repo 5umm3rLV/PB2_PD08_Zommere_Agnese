@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Solar Cargo - Konteineri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Solar Cargo konteineri</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Sākums</a>
+        <a href="konteineri.html">Konteineri</a>
+        <a href="statistika.html">Statistika</a>
+        <a href="add-container.html">Pievienot konteineru</a>
+    </nav>
+
+    <main>
+        <div class="container">
+
+            <p>Šajā lapā redzams konteineru saraksts.</p>
+
+            <div class="layout">
+
+                <section class="table-container">
+                    <h2>Konteineru saraksts</h2>
+
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Minerāls</th>
+                            <th>Izcelšanās bāze</th>
+                            <th>Galamērķa bāze</th>
+                            <th>Statuss</th>
+                        </tr>
+
+                        <tr>
+                            <td>SC-1201</td>
+                            <td>Titāns</td>
+                            <td>Mars Colony A</td>
+                            <td>Earth Base North</td>
+                            <td>Ceļā</td>
+                        </tr>
+
+                        <tr>
+                            <td>SC-1840</td>
+                            <td>Helijs-3</td>
+                            <td>Luna Base 12</td>
+                            <td>Orbital Station Gamma</td>
+                            <td>Noliktavā</td>
+                        </tr>
+
+                        <tr>
+                            <td>SC-2044</td>
+                            <td>Dzelzs rūda</td>
+                            <td>Asteroid Hub 7</td>
+                            <td>Earth Base West</td>
+                            <td>Piegādāts</td>
+                        </tr>
+
+                        <tr>
+                            <td>SC-2500</td>
+                            <td>Ūdens ledus</td>
+                            <td>Europa Station</td>
+                            <td>Mars Colony B</td>
+                            <td>Ceļā</td>
+                        </tr>
+
+                        <tr>
+                            <td>SC-3008</td>
+                            <td>Silīcijs</td>
+                            <td>Mercury Outpost</td>
+                            <td>Venus Relay Port</td>
+                            <td>Piegādāts</td>
+                        </tr>
+
+                        <tr>
+                            <td>SC-3391</td>
+                            <td>Helijs-3</td>
+                            <td>Luna Base 22</td>
+                            <td>Earth Base Australia-4</td>
+                            <td>Ceļā</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section class="form-container">
+                    <h2>Pievienot jaunu konteineru</h2>
+
+                    <form>
+                        <label for="id">ID:</label>
+                        <input type="text" id="id" name="id">
+
+                        <label for="minerals">Minerāls:</label>
+                        <input type="text" id="minerals" name="minerals">
+
+                        <label for="origin">Izcelšanās bāze:</label>
+                        <input type="text" id="origin" name="origin">
+
+                        <label for="destination">Galamērķa bāze:</label>
+                        <input type="text" id="destination" name="destination">
+
+                        <label for="status">Statuss:</label>
+                        <select id="status" name="status">
+                            <option value="cela">Ceļā</option>
+                            <option value="noliktava">Noliktavā</option>
+                            <option value="piegadats">Piegādāts</option>
+                        </select>
+
+                        <button type="submit">Saglabāt</button>
+                    </form>
+
+                    <p>
+                        ⚠ Šajā modulī forma datus nesaglabā.
+                        Tās mērķis ir demonstrēt lietotāja saskarnes struktūru.
+                    </p>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Solar Cargo sistēma</p>
+    </footer>
+
+</body>
+</html>

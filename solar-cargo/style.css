@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #1f4e79;
+    margin: 10px 0 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2f6690;
+    margin: 10px 0 15px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul {
+    background-color: #e8f1f8;
+    padding: 20px 35px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #1f4e79;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8f1f8;
+}
+
+/* Tabulas un formas izkārtojums */
+.layout {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.table-container,
+.form-container {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Forma */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    padding: 8px;
+    width: 100%;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 8px;
+}
