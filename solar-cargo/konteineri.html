@@ -37,53 +37,16 @@
                             <th>Statuss</th>
                         </tr>
 
+                        <!-- Dinamiski ievietojam datus, ko sagatavoja PHP fails -->
+                        <?php foreach ($konteineri as$row): ?>
                         <tr>
-                            <td>SC-1201</td>
-                            <td>Titāns</td>
-                            <td>Mars Colony A</td>
-                            <td>Earth Base North</td>
-                            <td>Ceļā</td>
+                            <td><?= htmlspecialchars($row['id']) ?></td>
+                            <td><?= htmlspecialchars($row['minerals']) ?></td>
+                            <td><?= htmlspecialchars($row['izcelsanas_baze']) ?></td>
+                            <td><?= htmlspecialchars($row['galamerka_baze']) ?></td>
+                            <td><?= htmlspecialchars($row['statuss']) ?></td>
                         </tr>
-
-                        <tr>
-                            <td>SC-1840</td>
-                            <td>Helijs-3</td>
-                            <td>Luna Base 12</td>
-                            <td>Orbital Station Gamma</td>
-                            <td>Noliktavā</td>
-                        </tr>
-
-                        <tr>
-                            <td>SC-2044</td>
-                            <td>Dzelzs rūda</td>
-                            <td>Asteroid Hub 7</td>
-                            <td>Earth Base West</td>
-                            <td>Piegādāts</td>
-                        </tr>
-
-                        <tr>
-                            <td>SC-2500</td>
-                            <td>Ūdens ledus</td>
-                            <td>Europa Station</td>
-                            <td>Mars Colony B</td>
-                            <td>Ceļā</td>
-                        </tr>
-
-                        <tr>
-                            <td>SC-3008</td>
-                            <td>Silīcijs</td>
-                            <td>Mercury Outpost</td>
-                            <td>Venus Relay Port</td>
-                            <td>Piegādāts</td>
-                        </tr>
-
-                        <tr>
-                            <td>SC-3391</td>
-                            <td>Helijs-3</td>
-                            <td>Luna Base 22</td>
-                            <td>Earth Base Australia-4</td>
-                            <td>Ceļā</td>
-                        </tr>
+                        <?php endforeach; ?>
                     </table>
                 </section>
 
